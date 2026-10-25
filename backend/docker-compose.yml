@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: poojacycle360-db
+    environment:
+      POSTGRES_DB: poojacycle360
+      POSTGRES_USER: poojacycle
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change_this_local_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - poojacycle360_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U poojacycle -d poojacycle360"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  poojacycle360_pgdata:

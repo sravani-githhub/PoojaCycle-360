@@ -1,0 +1,122 @@
+erDiagram
+    USERS ||--o{ WASTE_REPORTS : reports
+    WASTE_SOURCES ||--o{ WASTE_REPORTS : has
+    WASTE_TYPES ||--o{ WASTE_REPORTS : classifies
+    USERS ||--o{ COLLECTION_ASSIGNMENTS : collects
+    WASTE_REPORTS ||--o{ COLLECTION_ASSIGNMENTS : scheduled_as
+    WASTE_REPORTS ||--o| WASTE_BATCHES : received_as
+    WASTE_TYPES ||--o{ WASTE_BATCHES : classifies
+    WASTE_BATCHES ||--o{ PROCESSING_RECORDS : processed_by
+    USERS ||--o{ PROCESSING_RECORDS : partner
+    USERS ||--o| ARTISANS : profile
+    ARTISANS ||--o{ MATERIAL_REQUESTS : requests
+    WASTE_TYPES ||--o{ MATERIAL_REQUESTS : requested_type
+    ARTISANS ||--o{ PRODUCTS : produces
+    PRODUCTS ||--o{ PRODUCT_BATCHES : made_from
+    WASTE_BATCHES ||--o{ PRODUCT_BATCHES : material_source
+    USERS ||--o{ ORDERS : places
+    ORDERS ||--|{ ORDER_ITEMS : contains
+    PRODUCTS ||--o{ ORDER_ITEMS : ordered_product
+    WASTE_BATCHES o|--o{ IMPACT_RECORDS : measured_for
+    PROCESSING_RECORDS o|--o{ IMPACT_RECORDS : outcome_for
+
+    USERS {
+        int id PK
+        string full_name
+        string email UK
+        string role
+        string account_status
+        datetime created_at
+    }
+    WASTE_SOURCES {
+        int id PK
+        string source_name
+        string source_type
+        text address
+    }
+    WASTE_TYPES {
+        int id PK
+        string name UK
+        text handling_notes
+    }
+    WASTE_REPORTS {
+        int id PK
+        int source_id FK
+        int waste_type_id FK
+        decimal quantity
+        string unit
+        int reported_by_user_id FK
+        string collection_status
+    }
+    COLLECTION_ASSIGNMENTS {
+        int id PK
+        int waste_report_id FK
+        int collector_user_id FK
+        datetime scheduled_pickup_at
+        string status
+    }
+    WASTE_BATCHES {
+        int id PK
+        int waste_report_id FK
+        int waste_type_id FK
+        decimal received_quantity
+        string current_stage
+    }
+    PROCESSING_RECORDS {
+        int id PK
+        int batch_id FK
+        int processing_partner_user_id FK
+        string processing_method
+        decimal input_quantity
+        decimal output_quantity
+        string status
+    }
+    ARTISANS {
+        int id PK
+        int user_id FK
+        string display_name
+        string availability_status
+    }
+    MATERIAL_REQUESTS {
+        int id PK
+        int artisan_id FK
+        int waste_type_id FK
+        decimal required_quantity
+        string status
+    }
+    PRODUCTS {
+        int id PK
+        int artisan_id FK
+        string product_name
+        decimal price
+        int available_stock
+    }
+    PRODUCT_BATCHES {
+        int id PK
+        int product_id FK
+        int batch_id FK
+        decimal quantity_used
+    }
+    ORDERS {
+        int id PK
+        int customer_user_id FK
+        datetime order_date
+        decimal total_amount
+        string status
+    }
+    ORDER_ITEMS {
+        int id PK
+        int order_id FK
+        int product_id FK
+        int quantity
+        decimal unit_price
+        decimal subtotal
+    }
+    IMPACT_RECORDS {
+        int id PK
+        int batch_id FK
+        int processing_record_id FK
+        decimal measured_quantity
+        string quantity_basis
+        string verification_status
+    }

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="1320" viewBox="0 0 1160 1320">
+<rect width="1160" height="1320" fill="#f7f5ef"/>
+<text x="40" y="48" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#2c4a3e">PoojaCycle 360 — relational data model</text>
+<text x="40" y="76" font-family="Arial,sans-serif" font-size="13" fill="#526259">FK relationships and cardinalities · PostgreSQL / SQLAlchemy</text>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#789183"/></marker></defs>
+<path d="M 360 176.0 C 405 176.0, 375 176.0, 420 176.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="170.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 366.0 C 405 366.0, 375 176.0, 420 176.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="265.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 556.0 C 405 556.0, 375 176.0, 420 176.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="360.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 740 176.0 C 758 176.0, 758 366.0, 740 366.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="760" y="271.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 176.0 C 405 176.0, 375 366.0, 420 366.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="265.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 740 176.0 C 758 176.0, 758 1126.0, 740 1126.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="760" y="651.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:0..1</text>
+<path d="M 360 556.0 C 405 556.0, 375 1126.0, 420 1126.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="835.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 740 1126.0 C 785 1126.0, 755 366.0, 800 366.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="770.0" y="740.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 176.0 C 571.2 176.0, 588.8 366.0, 800 366.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="580.0" y="265.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">partner</text>
+<path d="M 360 176.0 C 378 176.0, 378 746.0, 360 746.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="380" y="461.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:0..1</text>
+<path d="M 360 746.0 C 405 746.0, 375 556.0, 420 556.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="645.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 556.0 C 405 556.0, 375 556.0, 420 556.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="550.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 746.0 C 378 746.0, 378 936.0, 360 936.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="380" y="841.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 936.0 C 405 936.0, 375 936.0, 420 936.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="930.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 740 1126.0 C 758 1126.0, 758 936.0, 740 936.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="760" y="1031.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 176.0 C 378 176.0, 378 1126.0, 360 1126.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="380" y="651.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 1126.0 C 405 1126.0, 375 746.0, 420 746.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="930.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 360 936.0 C 405 936.0, 375 746.0, 420 746.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="390.0" y="835.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">1:N</text>
+<path d="M 740 1126.0 C 785 1126.0, 755 746.0, 800 746.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="770.0" y="930.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">0..1:N</text>
+<path d="M 1120 366.0 C 1138 366.0, 1138 746.0, 1120 746.0" fill="none" stroke="#789183" stroke-width="1.5" opacity=".7" marker-end="url(#arrow)"/>
+<text x="1140" y="556.0" font-family="Arial,sans-serif" font-size="10" fill="#526259">0..1:N</text>
+<rect x="40" y="110" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M52 110 H348 Q360 110 360 122 V148 H40 V122 Q40 110 52 110" fill="#dce8dd"/>
+<text x="54" y="135" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">USERS</text>
+<text x="54" y="169" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="54" y="187" font-family="Arial,sans-serif" font-size="11" fill="#34433a">UK email</text>
+<text x="54" y="205" font-family="Arial,sans-serif" font-size="11" fill="#34433a">role, status, timestamps</text>
+<rect x="40" y="300" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M52 300 H348 Q360 300 360 312 V338 H40 V312 Q40 300 52 300" fill="#dce8dd"/>
+<text x="54" y="325" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">WASTE_SOURCES</text>
+<text x="54" y="359" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="54" y="377" font-family="Arial,sans-serif" font-size="11" fill="#34433a">source_name, source_type</text>
+<text x="54" y="395" font-family="Arial,sans-serif" font-size="11" fill="#34433a">address, contact fields</text>
+<rect x="40" y="490" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M52 490 H348 Q360 490 360 502 V528 H40 V502 Q40 490 52 490" fill="#dce8dd"/>
+<text x="54" y="515" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">WASTE_TYPES</text>
+<text x="54" y="549" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="54" y="567" font-family="Arial,sans-serif" font-size="11" fill="#34433a">UK name</text>
+<text x="54" y="585" font-family="Arial,sans-serif" font-size="11" fill="#34433a">description, handling_notes</text>
+<rect x="40" y="680" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M52 680 H348 Q360 680 360 692 V718 H40 V692 Q40 680 52 680" fill="#dce8dd"/>
+<text x="54" y="705" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">ARTISANS</text>
+<text x="54" y="739" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="54" y="757" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK user_id (optional)</text>
+<text x="54" y="775" font-family="Arial,sans-serif" font-size="11" fill="#34433a">skills, materials, availability</text>
+<rect x="40" y="870" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M52 870 H348 Q360 870 360 882 V908 H40 V882 Q40 870 52 870" fill="#dce8dd"/>
+<text x="54" y="895" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">PRODUCTS</text>
+<text x="54" y="929" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="54" y="947" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK artisan_id (optional)</text>
+<text x="54" y="965" font-family="Arial,sans-serif" font-size="11" fill="#34433a">price, stock, status</text>
+<rect x="40" y="1060" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M52 1060 H348 Q360 1060 360 1072 V1098 H40 V1072 Q40 1060 52 1060" fill="#dce8dd"/>
+<text x="54" y="1085" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">ORDERS</text>
+<text x="54" y="1119" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="54" y="1137" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK customer_user_id</text>
+<text x="54" y="1155" font-family="Arial,sans-serif" font-size="11" fill="#34433a">order_date, status, total</text>
+<rect x="420" y="110" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M432 110 H728 Q740 110 740 122 V148 H420 V122 Q420 110 432 110" fill="#dce8dd"/>
+<text x="434" y="135" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">WASTE_REPORTS</text>
+<text x="434" y="169" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="434" y="187" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK source_id, waste_type_id</text>
+<text x="434" y="205" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK reported_by_user_id</text>
+<text x="434" y="223" font-family="Arial,sans-serif" font-size="11" fill="#34433a">quantity, unit, status</text>
+<rect x="420" y="300" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M432 300 H728 Q740 300 740 312 V338 H420 V312 Q420 300 432 300" fill="#dce8dd"/>
+<text x="434" y="325" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">COLLECTION_ASSIGNMENTS</text>
+<text x="434" y="359" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="434" y="377" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK waste_report_id</text>
+<text x="434" y="395" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK collector_user_id</text>
+<text x="434" y="413" font-family="Arial,sans-serif" font-size="11" fill="#34433a">pickup times, status</text>
+<rect x="420" y="490" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M432 490 H728 Q740 490 740 502 V528 H420 V502 Q420 490 432 490" fill="#dce8dd"/>
+<text x="434" y="515" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">MATERIAL_REQUESTS</text>
+<text x="434" y="549" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="434" y="567" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK artisan_id, waste_type_id</text>
+<text x="434" y="585" font-family="Arial,sans-serif" font-size="11" fill="#34433a">required_quantity, unit</text>
+<text x="434" y="603" font-family="Arial,sans-serif" font-size="11" fill="#34433a">status</text>
+<rect x="420" y="680" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M432 680 H728 Q740 680 740 692 V718 H420 V692 Q420 680 432 680" fill="#dce8dd"/>
+<text x="434" y="705" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">ORDER_ITEMS</text>
+<text x="434" y="739" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="434" y="757" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK order_id, product_id</text>
+<text x="434" y="775" font-family="Arial,sans-serif" font-size="11" fill="#34433a">quantity, unit_price, subtotal</text>
+<rect x="420" y="870" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M432 870 H728 Q740 870 740 882 V908 H420 V882 Q420 870 432 870" fill="#dce8dd"/>
+<text x="434" y="895" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">PRODUCT_BATCHES</text>
+<text x="434" y="929" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id; unique product + batch</text>
+<text x="434" y="947" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK product_id, batch_id</text>
+<text x="434" y="965" font-family="Arial,sans-serif" font-size="11" fill="#34433a">quantity_used, unit</text>
+<rect x="420" y="1060" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M432 1060 H728 Q740 1060 740 1072 V1098 H420 V1072 Q420 1060 432 1060" fill="#dce8dd"/>
+<text x="434" y="1085" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">WASTE_BATCHES</text>
+<text x="434" y="1119" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="434" y="1137" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK waste_report_id (unique)</text>
+<text x="434" y="1155" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK waste_type_id</text>
+<text x="434" y="1173" font-family="Arial,sans-serif" font-size="11" fill="#34433a">received quantity, stage</text>
+<rect x="800" y="300" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M812 300 H1108 Q1120 300 1120 312 V338 H800 V312 Q800 300 812 300" fill="#dce8dd"/>
+<text x="814" y="325" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">PROCESSING_RECORDS</text>
+<text x="814" y="359" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="814" y="377" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK batch_id, partner_user_id</text>
+<text x="814" y="395" font-family="Arial,sans-serif" font-size="11" fill="#34433a">method, input/output</text>
+<text x="814" y="413" font-family="Arial,sans-serif" font-size="11" fill="#34433a">status, evidence</text>
+<rect x="800" y="680" width="320" height="132" rx="12" fill="#fff" stroke="#9bad9d" stroke-width="1.5"/>
+<path d="M812 680 H1108 Q1120 680 1120 692 V718 H800 V692 Q800 680 812 680" fill="#dce8dd"/>
+<text x="814" y="705" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#2c4a3e">IMPACT_RECORDS</text>
+<text x="814" y="739" font-family="Arial,sans-serif" font-size="11" fill="#34433a">PK id</text>
+<text x="814" y="757" font-family="Arial,sans-serif" font-size="11" fill="#34433a">FK batch_id / processing_record_id</text>
+<text x="814" y="775" font-family="Arial,sans-serif" font-size="11" fill="#34433a">measured quantity, basis</text>
+<text x="814" y="793" font-family="Arial,sans-serif" font-size="11" fill="#34433a">verification status</text>
+<text x="40" y="1260" font-family="Arial,sans-serif" font-size="11" fill="#526259">Amounts use explicit units; prices use decimal currency; demo records are fictional and unverified.</text>
+</svg>
